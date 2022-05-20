@@ -68,9 +68,11 @@ int main(int argc, char** argv){
     for(int i = 0; i < argc; i++){
         if(strcmp(argv[i], "--encrypt") == 0){
             Encrypt(argv[i+1],argv[i+2]);   
+            printf("Successfully encrypted file %s\n", argv[i+1]);
         }
         if(strcmp(argv[i],"--deencrypt") == 0){
             DeEncrypt(argv[i+1]);
+            printf("Successfully deencrypted file %s\n", argv[i+1]);
         }
     }
 
